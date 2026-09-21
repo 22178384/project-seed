@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-seed"
+version = "0.1.0"
+description = "最小可运行 Python 项目骨架（演示依赖 c991china/python-utils）"
+requires-python = ">=3.9"
+
+# 跨账号依赖（按需启用，取消注释后 pip install -e . 会拉取友号仓库）：
+# dependencies = [
+#     "python-utils @ git+https://github.com/c991china/python-utils.git",
+# ]
+
+[tool.setuptools.packages.find]
+where = ["src"]
